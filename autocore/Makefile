@@ -40,6 +40,7 @@ endif
 
 	$(INSTALL_DIR) $(1)/sbin
 	$(INSTALL_BIN) ./files/cpuinfo $(1)/sbin/
+	$(INSTALL_BIN) ./files/cpuusage $(1)/sbin/
 ifneq ($(filter ipq% mediatek% qualcommax%, $(TARGETID)),)
 	$(INSTALL_BIN) ./files/tempinfo $(1)/sbin/
 endif
